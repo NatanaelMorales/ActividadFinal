@@ -53,6 +53,41 @@
     </div>
     <div id="sidebar"> <a href="#"><img src="{%static 'images/discount.jpg'%}" width="300" height="790" alt=""></a> </div>
   </div>
+  <br>
+  {%if allmascota%}
+    {%for arraymascota in allmascota%}
+      <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+           <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>{{arraymascota.nombre}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    {%endfor%}
+  {%endif%}
+  <br>
   <div class="featured">
     <ul>
       <li><a href="#"><img src="{%static 'images/organic-and-chemical-free.jpg'%}" width="300" height="90" alt=""></a></li>
@@ -61,40 +96,8 @@
     </ul>
   </div>
 </div>
-<br>
 
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
 
-<br>
 <div id="footer">
   <div class="section">
     <ul>

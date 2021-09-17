@@ -126,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-gt'
 
-TIME_ZONE = 'America/Guatemala'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
